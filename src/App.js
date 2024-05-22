@@ -8,9 +8,15 @@ import HooksInReact from "./HooksInReact";
 import Assignment from "./Assignment";
 
 function App() {
+
+
+  const handleCounter = (value) =>{
+    console.log(value);
+  }
+
   return (
     <div>
-      <h1 className="text-center"> This is App File</h1>
+      {/* <h1 className="text-center"> This is App File</h1> */}
 
       {/* <PropTypesReact
         name={"Harish Mamidala"}
@@ -27,7 +33,7 @@ function App() {
 
       {/* <HooksInReact /> */}
 
-      <Assignment />
+      <Assignment handleCounter={handleCounter}/>
 
 
     </div>
